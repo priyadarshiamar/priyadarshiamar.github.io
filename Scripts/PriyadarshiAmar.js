@@ -28,11 +28,18 @@ function SwitchPanes(pPaneID)
     }
 }
 
-function toggleAbstract() {
-    var abstractDiv = document.getElementById("abstract");
-    if (abstractDiv.style.display === "none") {
-        abstractDiv.style.display = "block";
-    } else {
-        abstractDiv.style.display = "none";
-    }
-}
+// JavaScript to handle the expandable button
+document.addEventListener("DOMContentLoaded", function() {
+    const expandBtn = document.querySelector('.expand-btn');
+    const abstractContent = document.querySelector('.abstract-content');
+
+    expandBtn.addEventListener('click', function() {
+        if (abstractContent.style.display === "none" || abstractContent.style.display === "") {
+            abstractContent.style.display = "block";
+            expandBtn.textContent = "Hide Abstract";
+        } else {
+            abstractContent.style.display = "none";
+            expandBtn.textContent = "Show Abstract";
+        }
+    });
+});

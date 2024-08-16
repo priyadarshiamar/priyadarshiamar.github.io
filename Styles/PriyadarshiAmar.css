@@ -202,3 +202,26 @@ html, body, {
     text-decoration: none;
     color: #808080;
 }
+
+
+/* Style for the expandable button */
+.expand-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Style for the abstract content */
+.abstract-content {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
