@@ -28,19 +28,25 @@ function SwitchPanes(pPaneID)
     }
 }
 
-// JavaScript to handle the expandable button (inline version)
 document.addEventListener("DOMContentLoaded", function() {
-    const expandBtnInline = document.querySelector('.expand-btn-inline');
-    const abstractContentInline = document.querySelector('.abstract-content-inline');
+    // Select all buttons with the class 'expand-btn-inline'
+    const expandButtons = document.querySelectorAll('.expand-btn-inline');
 
-    expandBtnInline.addEventListener('click', function() {
-        if (abstractContentInline.style.display === "none" || abstractContentInline.style.display === "") {
-            abstractContentInline.style.display = "block";
-            expandBtnInline.textContent = "Hide Abstract";
-        } else {
-            abstractContentInline.style.display = "none";
-            expandBtnInline.textContent = "Show Abstract";
-        }
+    // Iterate over each button and add a click event listener
+    expandButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            // Find the next sibling element with the class 'abstract-content-inline'
+            const abstractContent = button.nextElementSibling;
+
+            // Toggle the display of the abstract content
+            if (abstractContent.style.display === "none" || abstractContent.style.display === "") {
+                abstractContent.style.display = "block";
+                button.textContent = "Hide Abstract";
+            } else {
+                abstractContent.style.display = "none";
+                button.textContent = "Show Abstract";
+            }
+        });
     });
 });
 
