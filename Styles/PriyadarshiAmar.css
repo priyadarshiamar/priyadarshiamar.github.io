@@ -223,4 +223,8 @@ html, body, {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+    text-align: left; /* Ensure text is left-aligned */
+    width: 100%; /* Ensure it takes the full width of the parent */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
 }
+
