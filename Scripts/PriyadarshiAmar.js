@@ -57,3 +57,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+    // JavaScript to handle the expandable button for the third paper
+    const expandBtn3 = document.getElementById('expand-btn-3');
+    const abstractContent3 = document.getElementById('abstract-content-3');
+
+    expandBtn3.addEventListener('click', function() {
+        if (abstractContent3.style.display === "none" || abstractContent3.style.display === "") {
+            abstractContent3.style.display = "block";
+            expandBtn3.textContent = "[-] Abstract";
+        } else {
+            abstractContent3.style.display = "none";
+            expandBtn3.textContent = "[+] Abstract";
+        }
+    });
+});
