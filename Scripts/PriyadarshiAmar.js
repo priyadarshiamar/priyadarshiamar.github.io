@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function() {
             expandBtn2.textContent = "[+] Abstract";
         }
     });
-});
 
     // JavaScript to handle the expandable button for the third paper
     const expandBtn3 = document.getElementById('expand-btn-3');
