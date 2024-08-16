@@ -28,27 +28,32 @@ function SwitchPanes(pPaneID)
     }
 }
 
+// JavaScript to handle the expandable button for the first paper
 document.addEventListener("DOMContentLoaded", function() {
-    // Select all buttons with the class 'expand-btn-inline'
-    const expandButtons = document.querySelectorAll('.expand-btn-inline');
+    const expandBtn1 = document.getElementById('expand-btn-1');
+    const abstractContent1 = document.getElementById('abstract-content-1');
 
-    // Iterate over each button and add a click event listener
-    expandButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            // Find the abstract content div that is a sibling to the button
-            const abstractContent = button.nextElementSibling;
+    expandBtn1.addEventListener('click', function() {
+        if (abstractContent1.style.display === "none" || abstractContent1.style.display === "") {
+            abstractContent1.style.display = "block";
+            expandBtn1.textContent = "Hide Abstract";
+        } else {
+            abstractContent1.style.display = "none";
+            expandBtn1.textContent = "Show Abstract";
+        }
+    });
 
-            // Check if the next sibling is the correct abstract content
-            if (abstractContent && abstractContent.classList.contains('abstract-content-inline')) {
-                // Toggle the display of the abstract content
-                if (abstractContent.style.display === "none" || abstractContent.style.display === "") {
-                    abstractContent.style.display = "block";
-                    button.textContent = "Hide Abstract";
-                } else {
-                    abstractContent.style.display = "none";
-                    button.textContent = "Show Abstract";
-                }
-            }
-        });
+    // JavaScript to handle the expandable button for the second paper
+    const expandBtn2 = document.getElementById('expand-btn-2');
+    const abstractContent2 = document.getElementById('abstract-content-2');
+
+    expandBtn2.addEventListener('click', function() {
+        if (abstractContent2.style.display === "none" || abstractContent2.style.display === "") {
+            abstractContent2.style.display = "block";
+            expandBtn2.textContent = "Hide Abstract";
+        } else {
+            abstractContent2.style.display = "none";
+            expandBtn2.textContent = "Show Abstract";
+        }
     });
 });
