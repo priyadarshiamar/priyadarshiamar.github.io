@@ -35,8 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Iterate over each button and add a click event listener
     expandButtons.forEach(function(button) {
         button.addEventListener('click', function() {
-            // Find the next sibling element with the class 'abstract-content-inline'
-            const abstractContent = button.nextElementSibling;
+            // Find the next '.abstract-content-inline' element in the DOM hierarchy
+            let abstractContent = button.nextElementSibling;
+
+            // Check until we find the .abstract-content-inline or reach the end
+            while (abstractContent && !abstractContent.classList.contains('abstract-content-inline')) {
+                abstractContent = abstractContent.nextElementSibling;
+            }
 
             // Toggle the display of the abstract content
             if (abstractContent.style.display === "none" || abstractContent.style.display === "") {
