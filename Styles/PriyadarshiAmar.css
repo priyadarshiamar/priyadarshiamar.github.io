@@ -207,7 +207,7 @@ html, body, {
 .expand-btn-inline {
     background-color: white; /* White background */
     color: black;
-    border: none;
+    border: 1px solid black;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 3px;
