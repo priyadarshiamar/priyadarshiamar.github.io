@@ -206,8 +206,8 @@ html, body, {
 /* Style for the inline expandable button */
 .expand-btn-inline {
     background-color: white; /* White background */
-    color: #4CAF50;
-    border: 1px solid #4CAF50;
+    color: black;
+    border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 3px;
