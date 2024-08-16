@@ -35,23 +35,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // Iterate over each button and add a click event listener
     expandButtons.forEach(function(button) {
         button.addEventListener('click', function() {
-            // Find the next '.abstract-content-inline' element in the DOM hierarchy
-            let abstractContent = button.nextElementSibling;
+            // Find the abstract content div that is a sibling to the button
+            const abstractContent = button.nextElementSibling;
 
-            // Check until we find the .abstract-content-inline or reach the end
-            while (abstractContent && !abstractContent.classList.contains('abstract-content-inline')) {
-                abstractContent = abstractContent.nextElementSibling;
-            }
-
-            // Toggle the display of the abstract content
-            if (abstractContent.style.display === "none" || abstractContent.style.display === "") {
-                abstractContent.style.display = "block";
-                button.textContent = "Hide Abstract";
-            } else {
-                abstractContent.style.display = "none";
-                button.textContent = "Show Abstract";
+            // Check if the next sibling is the correct abstract content
+            if (abstractContent && abstractContent.classList.contains('abstract-content-inline')) {
+                // Toggle the display of the abstract content
+                if (abstractContent.style.display === "none" || abstractContent.style.display === "") {
+                    abstractContent.style.display = "block";
+                    button.textContent = "Hide Abstract";
+                } else {
+                    abstractContent.style.display = "none";
+                    button.textContent = "Show Abstract";
+                }
             }
         });
     });
 });
-
