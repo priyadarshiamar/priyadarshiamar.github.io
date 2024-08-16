@@ -28,18 +28,19 @@ function SwitchPanes(pPaneID)
     }
 }
 
-// JavaScript to handle the expandable button
+// JavaScript to handle the expandable button (inline version)
 document.addEventListener("DOMContentLoaded", function() {
-    const expandBtn = document.querySelector('.expand-btn');
-    const abstractContent = document.querySelector('.abstract-content');
+    const expandBtnInline = document.querySelector('.expand-btn-inline');
+    const abstractContentInline = document.querySelector('.abstract-content-inline');
 
-    expandBtn.addEventListener('click', function() {
-        if (abstractContent.style.display === "none" || abstractContent.style.display === "") {
-            abstractContent.style.display = "block";
-            expandBtn.textContent = "Hide Abstract";
+    expandBtnInline.addEventListener('click', function() {
+        if (abstractContentInline.style.display === "none" || abstractContentInline.style.display === "") {
+            abstractContentInline.style.display = "block";
+            expandBtnInline.textContent = "Hide Abstract";
         } else {
-            abstractContent.style.display = "none";
-            expandBtn.textContent = "Show Abstract";
+            abstractContentInline.style.display = "none";
+            expandBtnInline.textContent = "Show Abstract";
         }
     });
 });
+

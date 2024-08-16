@@ -203,21 +203,20 @@ html, body, {
     color: #808080;
 }
 
-
-/* Style for the expandable button */
-.expand-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
+/* Style for the inline expandable button */
+.expand-btn-inline {
+    background-color: white; /* White background */
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+    padding: 5px 10px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-    display: inline-block;
+    border-radius: 3px;
+    display: inline-block; /* Display inline */
+    margin-left: 10px; /* Space between link and button */
 }
 
-/* Style for the abstract content */
-.abstract-content {
+/* Style for the inline abstract content */
+.abstract-content-inline {
     display: none; /* Initially hidden */
     margin-top: 10px;
     padding: 10px;
