@@ -27,3 +27,12 @@ function SwitchPanes(pPaneID)
         document.getElementById("divTeaching").style.display = "block";
     }
 }
+
+function toggleAbstract() {
+    var abstractDiv = document.getElementById("abstract");
+    if (abstractDiv.style.display === "none") {
+        abstractDiv.style.display = "block";
+    } else {
+        abstractDiv.style.display = "none";
+    }
+}
