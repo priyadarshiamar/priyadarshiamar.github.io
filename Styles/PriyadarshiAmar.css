@@ -207,8 +207,9 @@ html, body, {
 .expand-btn-inline {
     background-color: white; /* White background */
     color: black;
-    border: 1px solid black;
+    border: none;
     padding: 5px 10px;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 3px;
     display: inline-block; /* Display inline */
@@ -220,9 +221,9 @@ html, body, {
     display: none; /* Initially hidden */
     margin-top: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: white;
     text-align: left; /* Ensure text is left-aligned */
     width: 100%; /* Ensure it takes the full width of the parent */
     box-sizing: border-box; /* Include padding and border in the element's width and height */

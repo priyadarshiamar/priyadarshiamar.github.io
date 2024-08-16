@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
     expandBtn1.addEventListener('click', function() {
         if (abstractContent1.style.display === "none" || abstractContent1.style.display === "") {
             abstractContent1.style.display = "block";
-            expandBtn1.textContent = "Hide Abstract";
+            expandBtn1.textContent = "[-] Abstract";
         } else {
             abstractContent1.style.display = "none";
-            expandBtn1.textContent = "Show Abstract";
+            expandBtn1.textContent = "[+] Abstract";
         }
     });
 
@@ -50,10 +50,10 @@ document.addEventListener("DOMContentLoaded", function() {
     expandBtn2.addEventListener('click', function() {
         if (abstractContent2.style.display === "none" || abstractContent2.style.display === "") {
             abstractContent2.style.display = "block";
-            expandBtn2.textContent = "Hide Abstract";
+            expandBtn2.textContent = "[-] Abstract";
         } else {
             abstractContent2.style.display = "none";
-            expandBtn2.textContent = "Show Abstract";
+            expandBtn2.textContent = "[+] Abstract";
         }
     });
 });
