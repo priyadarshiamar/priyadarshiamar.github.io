@@ -209,7 +209,6 @@ html, body, {
     color: black;
     border: none;
     padding: 5px 10px;
-    font-size: 16px;
     cursor: pointer;
     border-radius: 3px;
     display: inline-block; /* Display inline */
