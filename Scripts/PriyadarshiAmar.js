@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const expandBtn4 = document.getElementById('expand-btn-4');
     const abstractContent4 = document.getElementById('abstract-content-4');
 
-    expandBtn3.addEventListener('click', function() {
+    expandBtn4.addEventListener('click', function() {
         if (abstractContent4.style.display === "none" || abstractContent4.style.display === "") {
             abstractContent4.style.display = "block";
             expandBtn4.textContent = "[-] Abstract";
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const expandBtn5 = document.getElementById('expand-btn-5');
     const abstractContent5 = document.getElementById('abstract-content-5');
 
-    expandBtn3.addEventListener('click', function() {
+    expandBtn5.addEventListener('click', function() {
         if (abstractContent5.style.display === "none" || abstractContent5.style.display === "") {
             abstractContent5.style.display = "block";
             expandBtn5.textContent = "[-] Abstract";
