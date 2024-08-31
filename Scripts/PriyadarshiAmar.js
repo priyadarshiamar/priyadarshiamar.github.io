@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const abstractContent6 = document.getElementById('abstract-content-6');
 
     expandBtn5.addEventListener('click', function() {
-        if (abstractContent6.style.display === "none" || abstractContent5.style.display === "") {
+        if (abstractContent6.style.display === "none" || abstractContent6.style.display === "") {
             abstractContent6.style.display = "block";
             expandBtn6.textContent = "[-] Abstract";
         } else {
