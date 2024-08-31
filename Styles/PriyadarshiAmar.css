@@ -206,10 +206,11 @@ html, body, {
 /* Style for the inline expandable button */
 .expand-btn-inline {
     background-color: white; /* White background */
-    color: black;
+    color: -webkit-link;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    font-style: italic;
     border-radius: 3px;
     display: inline-block; /* Display inline */
     margin-left: 10px; /* Space between link and button */
