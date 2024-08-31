@@ -96,4 +96,17 @@ document.addEventListener("DOMContentLoaded", function() {
             expandBtn5.textContent = "[+] Abstract";
         }
     });
+           // JavaScript to handle the expandable button for the third paper
+    const expandBtn6 = document.getElementById('expand-btn-6');
+    const abstractContent6 = document.getElementById('abstract-content-6');
+
+    expandBtn5.addEventListener('click', function() {
+        if (abstractContent6.style.display === "none" || abstractContent5.style.display === "") {
+            abstractContent6.style.display = "block";
+            expandBtn6.textContent = "[-] Abstract";
+        } else {
+            abstractContent6.style.display = "none";
+            expandBtn6.textContent = "[+] Abstract";
+        }
+    });
 });
