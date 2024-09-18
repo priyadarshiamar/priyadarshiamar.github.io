@@ -109,4 +109,18 @@ document.addEventListener("DOMContentLoaded", function() {
             expandBtn6.textContent = "[+] Abstract";
         }
     });
+    
+        const expandBtn7 = document.getElementById('expand-btn-7');
+    const abstractContent7 = document.getElementById('abstract-content-7');
+
+    expandBtn7.addEventListener('click', function() {
+        if (abstractContent7.style.display === "none" || abstractContent7.style.display === "") {
+            abstractContent7.style.display = "block";
+            expandBtn7.textContent = "[-] Abstract";
+        } else {
+            abstractContent7.style.display = "none";
+            expandBtn7.textContent = "[+] Abstract";
+        }
+    });
+    
 });
