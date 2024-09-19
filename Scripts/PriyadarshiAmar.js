@@ -129,11 +129,6 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     const toggleLink = document.getElementById('toggle-abstract1');
     const abstractDiv = document.getElementById('intersectional_quotas_abstract');
-
-    toggleLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default anchor click behavior
-        abstractDiv.classList.toggle('hidden'); // Toggle the hidden class
-    });
     
     const toggleLink = document.getElementById('toggle-abstract2');
     const abstractDiv = document.getElementById('fertility_limits_abstract');
