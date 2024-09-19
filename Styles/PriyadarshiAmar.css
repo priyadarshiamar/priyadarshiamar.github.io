@@ -231,13 +231,18 @@ html, body, {
 }
 
 
-.hidden {
-    display: none; /* Hides elements with this class */
-}
 
 #predictability_budgeting_abstract {
+    display: none; /* Hides elements with this class */
+  
     padding: 10px;
     border: 1px solid black;
     margin-top: 10px;
     background-color: white; /* Optional: adds background color */
+        width: 100%; /* Ensure it takes the full width of the parent */
+            text-align: left; /* Ensure text is left-aligned */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+    border-radius: 5px;
+
+
 }
