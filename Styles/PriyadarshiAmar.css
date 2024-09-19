@@ -230,3 +230,14 @@ html, body, {
     box-sizing: border-box; /* Include padding and border in the element's width and height */
 }
 
+
+.hidden {
+    display: none; /* Hides elements with this class */
+}
+
+#predictability_budgeting_abstract {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background-color: #f9f9f9; /* Optional: adds background color */
+}
