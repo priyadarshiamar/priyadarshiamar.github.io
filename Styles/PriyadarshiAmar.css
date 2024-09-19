@@ -232,7 +232,7 @@ html, body, {
 
 
 
-#predictability_budgeting_abstract {
+.abstract-new {
     display: none; /* Hides elements with this class */
     padding: 10px;
     border: 1px solid black;
