@@ -237,12 +237,12 @@ html, body, {
 }
 
 #predictability_budgeting_abstract {
+    margin-top: 10px;
     padding: 10px;
     border: 1px solid black;
-    margin-top: 10px;
-    background-color: white; /* Optional: adds background color */
-        width: 100%; /* Ensure it takes the full width of the parent */
-            text-align: left; /* Ensure text is left-aligned */
-    box-sizing: border-box; /* Include padding and border in the element's width and height */
     border-radius: 5px;
+    background-color: white;
+    text-align: left; /* Ensure text is left-aligned */
+    width: 100%; /* Ensure it takes the full width of the parent */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
 }
