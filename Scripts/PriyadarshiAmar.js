@@ -128,10 +128,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const toggleLink = document.getElementById('toggle-abstract');
-    const abstractDiv = document.getElementById('predictability_budgeting_abstract');
+    const abstractDiv = document.getElementById('intersectional_quotas_abstract');
 
     toggleLink.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent the default anchor click behavior
         abstractDiv.classList.toggle('hidden'); // Toggle the hidden class
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleLink = document.getElementById('toggle-abstract');
+    const abstractDiv = document.getElementById('fertility_limits_abstract');
+
+    toggleLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor click behavior
+        abstractDiv.classList.toggle('hidden'); // Toggle the hidden class
+    });
+});
+
