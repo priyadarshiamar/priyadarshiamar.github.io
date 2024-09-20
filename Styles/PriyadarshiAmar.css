@@ -236,7 +236,7 @@ html, body, {
     display: none; /* Hides elements with this class */
 }
 
-#predictability_budgeting_abstract {
+.abstract {
     margin-top: 10px;
     padding: 10px;
     border: 1px solid black;
@@ -245,4 +245,15 @@ html, body, {
     text-align: left; /* Ensure text is left-aligned */
     width: 100%; /* Ensure it takes the full width of the parent */
     box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+/* Optional: Style for the toggle links */
+.toggle-abstract {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: blue; /* Change link color */
+    text-decoration: underline; /* Underline the text */
+}
+
+.toggle-abstract:hover {
+    text-decoration: none; /* Remove underline on hover */
 }

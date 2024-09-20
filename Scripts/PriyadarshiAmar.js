@@ -127,12 +127,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const toggleLink = document.getElementById('toggle-abstract');
-    const abstractDiv = document.getElementById('predictability_budgeting_abstract');
+    const toggleLinks = document.querySelectorAll('.toggle-abstract');
 
-    toggleLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default anchor click behavior
-        abstractDiv.classList.toggle('hidden'); // Toggle the hidden class
+    toggleLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default anchor click behavior
+            const targetId = this.getAttribute('data-target'); // Get the target ID from the data attribute
+            const abstractDiv = document.getElementById(targetId);
+            abstractDiv.classList.toggle('hidden'); // Toggle the hidden class
+        });
     });
 });
 
