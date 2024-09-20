@@ -250,7 +250,6 @@ html, body, {
 /* Optional: Style for the toggle links */
 .toggle-abstract {
     cursor: pointer; /* Change cursor to pointer on hover */
-    color: blue; /* Change link color */
     text-decoration: underline; /* Underline the text */
 }
 
