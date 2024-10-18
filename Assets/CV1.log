@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.16)  6 OCT 2024 09:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.16)  13 OCT 2024 23:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -428,11 +428,21 @@ Package hyperref Info: Link coloring ON on input line 63.
 \@outlinefile=\write3
 \openout3 = `CV1.out'.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
+
+ []
+
+
+Overfull \hbox (0.62498pt too wide) in paragraph at lines 138--139
+\OT1/cmr/bx/n/10 tion for Ru-ral Pop-u-la-tions in In-dia,"[][] \OT1/cmr/m/n/10
+ with Sum-i-tra Badri-nathan, Si-mon Chauchard,
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 180.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 180.
-
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
@@ -476,10 +486,10 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
 sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on CV1.pdf (3 pages, 97982 bytes).
+Output written on CV1.pdf (3 pages, 102496 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 142 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  22 named destinations out of 1000 (max. 500000)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
