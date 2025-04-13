@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.16)  11 DEC 2024 01:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.16)  14 APR 2025 00:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -433,10 +433,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--75
 
  []
 
+
+Overfull \hbox (4.34706pt too wide) in paragraph at lines 92--93
+[]  \OT1/cmr/m/n/10 Dis-ser-ta-tion:``Political Can-di-dacy and Rep-re-sen-ta-t
+ion in In-dia's Lo-cal Gov-ern-ments" 
+ []
+
+
+Overfull \hbox (3.25952pt too wide) in paragraph at lines 128--129
+[][][]\OT1/cmr/bx/n/10 ``Do Elec-toral Quo-tas for His-tor-i-cally Marginal-ize
+d Groups Im-prove Women's
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 178.
+(Font)              <7> on input line 185.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 178.
+(Font)              <5> on input line 185.
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
@@ -463,8 +475,15 @@ enddocument/afterlastpage: lastpage setting LastPage.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `CV1.out' has not changed.
-(rerunfilecheck)             Checksum: C07A68BC5385D171C1D22A937BEB2734;1993.
+
+
+Package rerunfilecheck Warning: File `CV1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `CV1.out':
+(rerunfilecheck)             Before: C07A68BC5385D171C1D22A937BEB2734;1993
+(rerunfilecheck)             After:  0BDF45F184FFEFCF11DB4B0C7F1A082B;1988.
  ) 
 Here is how much of TeX's memory you used:
  9839 strings out of 474116
@@ -480,10 +499,10 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
 sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on CV1.pdf (3 pages, 102905 bytes).
+Output written on CV1.pdf (3 pages, 103101 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 143 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  22 named destinations out of 1000 (max. 500000)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
