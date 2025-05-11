@@ -1,0 +1,485 @@
+\documentclass[10pt]{article}
+\usepackage{calc}
+\reversemarginpar
+\usepackage{multicol}
+\usepackage[empty]{fullpage}
+\usepackage[paper=letterpaper,
+            marginparwidth=1.2in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=1in,               % 1 inch margins
+            includemp]{geometry}
+						
+\setlength{\parindent}{0in}
+\usepackage{paralist}
+\usepackage{enumitem}
+\usepackage{etaremune}
+\setlist{nolistsep}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+%\fancyoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}{0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+%\setlength{\footpageshift}{\textwidth+\marginparsep+\marginparwidth}
+\lfoot{\hspace{\footpageshift}      
+\parbox{4in}{\, \hfill \arabic{page} of \protect\pageref*{LastPage} \hfill \,}}
+\usepackage{color,hyperref}
+\definecolor{gray}{rgb}{0.459,0.438,0.471}
+\definecolor{spot}{rgb}{0.6,0,0}
+\hypersetup{pdfnewwindow,colorlinks,breaklinks,linkcolor=blue,urlcolor=blue,anchorcolor=spot,citecolor=spot}
+
+
+
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+\renewcommand{\section}[2]%
+        {\pagebreak[3]\vspace{1.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+%\providecommand*\url[1]{\texttt{\href{#1}{#1}}}
+%\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+%\providecommand*\email[1]{\texttt{\href{mailto:#1}{#1}}}
+%\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    \TeX}} 
+    
+\renewcommand{\labelitemi}{$-$}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+    
+%\makeatletter
+%\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+%\makeatother
+		
+\begin{document}
+
+
+\hspace*{-\marginparsep minus \marginparwidth}%
+
+\makeheading{Priyadarshi Amar}
+
+\section{Contact Information}
+J 402 Raheja Vistas			\hfill  +91.9372975208  \\
+Raheja Vihar, Chandivali 		 \hfill +1.608.335.2852 \\  
+Mumbai 400076			\hfill  \href{mailto:pamar@wisc.edu}{pamar@wisc.edu}\\	
+Maharashtra, India 											\hfill  \href{https://priyadarshiamar.github.io/}{https://priyadarshiamar.github.io} \\
+
+
+\halfblankline
+
+\section{Appointment} 
+
+
+University Carlos III of Madrid (UC3M) 
+
+\quad Postdoctoral research associate at the Juan March Institute \hfill  Starting Fall 2025
+
+Artha Global
+
+\quad Consultant at Centre for Rapid Insights \hfill  April 2025-Present
+
+Polarization, Identity and Misinformation Lab (IC3JM)
+
+\quad Research fellow for POLARCHATS ERC Project \hfill  2024-Present
+ 
+ 
+\section{Education}
+University of Wisconsin--Madison
+
+\quad Joint PhD, Political Science and Agricultural \& Applied Economics \hfill  2025
+
+\quad \quad  Fields: Comparative Politics, Development Economics, Political Methodology
+
+\quad \quad Dissertation:``Political Candidacy and Representation in India’s Local Governments"
+
+\quad \quad Committee: Rikhil Bhavnani (co-chair), Laura Schechter (co-chair), 
+
+\quad \quad  Yoshiko Herrera, Priya Mukherjee, and Zhenhuan (Reed) Lei
+
+
+\halfblankline
+
+\quad MS, Economics \hfill 2018
+
+\halfblankline
+
+King's College London
+
+\quad MSc Financial Mathematics \hfill 2013
+
+
+\halfblankline
+
+University of Delhi
+
+\quad BSc, Statistics (Hons.) \hfill 2012
+
+%\section{Peer-Reviewed Book}\vspace{-4mm} \begin{etaremune}[topsep=0pt,leftmargin=5mm] 
+
+%\item Redjaboev, Khasan. 2027. \href[pdfnewwindow=true]{https://www.cambridge.org/us/academic/subjects/politics-international-relations/political-economy/nativism-and-economic-integration-across-developing-world-collision-and-accommodation?format=PB}{\textit{Communist Colonialism and Development: Forced Labor and the Making of Soviet Legacy}}. Cambridge University Press, \textit{Cambridge Elements: Political Economy} series, ed. Rikhil R. Bhavnani. \end{etaremune}
+
+%\section{Peer-Reviewed Articles} \vspace{-4mm} \begin{etaremune}[topsep=0pt,leftmargin=5mm] 
+
+%\item Bhavnani, Rikhil R., and Alexander Lee. 2021. \href[pdfnewwindow=true]{https://rbhavnani.github.io/files/BhavnaniLeeAJPS.pdf}{``Does Affirmative Action Worsen Bureaucratic Performance? Evidence from the Indian Administrative Service.''} \textit{American Journal of Political Science} 65(1): 5--20. 
+
+%\end{etaremune}
+
+\section{Research in Progress} \vspace{-4mm} 
+
+\href{https://www.dropbox.com/scl/fi/r3qe6tbtfox1xr1mfwjux/First_Draft.pdf?rlkey=6niq4b5ht4i6pm4hk2e8jjiuq&dl=0}{\textbf{``Do Electoral Quotas for Historically Marginalized Groups Improve Women's Representation? Evidence from India.''}} [Job Market Paper]
+
+ 
+
+
+\halfblankline
+
+
+\href{https://www.dropbox.com/scl/fi/7i6jcu4pltnrolknva2e1/Mercury_SSRC.pdf?rlkey=or10hyx4kuaxfj41b10gm16ig&dl=0}{\textbf{``Countering Misinformation Early: Evidence from a Classroom-Based Field Experiment in India,"}} with Sumitra Badrinathan, Simon Chauchard, and Florian Sichart [R\&R, American Political Science Review]
+
+
+
+\halfblankline
+
+  \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5200785}{\textbf{``Mere Proxies or Genuine Leaders? Female Candidates in Village Council Elections in India,"}} with Apurva Bamezai and Rithika Kumar
+  
+
+
+\halfblankline
+
+``Do Electoral Eligibility Laws Hurt Political Candidacy of Specific Groups? Evidence from Fertility Limits on Local Politicians in India.'' [Dissertation Paper]
+
+ \halfblankline
+ 
+ 
+ ``The Effects of Executive Selection Methods On Political Entry and Exit: Evidence from Village Elections in India.'' [Dissertation Paper]
+ 
+\halfblankline
+ 
+
+ ``Sharing Falsehoods in an Information-poor Environment: An Experiment with Indian Teenagers," with Sumitra Badrinathan, Simon Chauchard, and Florian Sichart
+
+\halfblankline
+
+ ``Heat on Democracy: Does Polling Day Temperature affect Elections?"  with Shweta Bhogale and Ting Liu
+ 
+
+ \halfblankline
+
+
+
+
+
+\section{External Conferences} 
+
+Annual Conference on Economic Growth and Development at ISI Delhi \hfill 2024, 2023
+
+KDIS-World Bank Development Impact Conference \hfill 2024
+
+American Political Science Association Annual Meeting  \hfill 2024, 2023
+
+European Conference on Politics and Gender \hfill 2024
+
+European Political Science Association Annual Meeting \hfill 2024
+
+Midwest Political Science Association Annual Conference \hfill  2024, 2023
+
+Southern Political Science Association Annual Conference  \hfill 2024
+
+Midwest Workshop in Empirical Political Science (MWEPS) \hfill 2023
+
+
+\section{Fieldwork}
+Bihar, India \hfill 9/2024, 11--12/2024
+
+Maharashtra, India \hfill 6--8/2019, 1/2022--4/2022
+
+
+\section{Research Assistance}
+Rikhil Bhavnani, UW--Madison \hfill 2023--24, 2016--18
+
+Nina Varsava, UW--Madison \hfill 2022--23
+
+Sisir Debnath, Indian School of Business \hfill 2014--16
+
+Rohini Somanathan, Centre for Development Economics \hfill 2013--14
+
+\section{Teaching}
+\textit{Undergraduate}
+
+ Introduction to Public Policy, Reader/Grader, UW--Madison \hfill 2021
+
+Understanding Political Numbers, Teaching Assistant, UW--Madison \hfill 2021
+
+Research Design for Undergraduates, Teaching Assistant, UW--Madison \hfill 2019
+
+
+
+\halfblankline
+
+\textit{Undergraduate research supervision}
+
+Undergraduate Research Program Mentor (3 students) \hfill 2024, 2023, 2022
+
+\halfblankline
+
+
+
+\textit{Graduate}
+
+Rational Choice Theories of Politics and Society, ICPSR \hfill 2024 
+
+Mathematics for Social Scientists,  Teaching Assistant, ICPSR \hfill 2024, 2023
+
+Introduction to Python,  Teaching Assistant, ICPSR \hfill 2023
+
+Game Theory for Graduate Students, Teaching Assistant, UW--Madison \hfill 2020
+
+Managerial Economics, Teaching Assistant, Indian School of Business \hfill 2016, 2015
+
+
+\halfblankline
+
+
+
+
+ 
+
+\section{Service}
+\textit{Department}
+
+
+Discussant, Comparative Politics Colloquium \hfill 2023, 2022, 2021, 2019
+
+Discussant, Models, Experiments, and Data Workshop \hfill 2023
+
+Student Coordinator, Comparative Politics Colloquium \hfill 2019, 2020
+
+
+\halfblankline
+
+%\textit{University}
+
+%Member, Faculty Senate \hfill Fall 2014
+
+%Member, Center for South Asia Advisory Board, UW--Madison \hfill 2012/13
+
+%\halfblankline
+
+
+\textit{Discipline}
+
+
+Discussant \& Chair, Midwest Political Science Association Annual Conference \hfill 2024
+
+Chair, Southern Political Science Association Annual Conference \hfill 2024
+
+
+Discussant, American Political Science Association Annual Meeting \hfill 2023
+
+\halfblankline
+
+
+\textit{Journal Referee}
+
+\textit{Economic Modeling, American Journal of Agricultural Economics} 
+
+\halfblankline
+
+
+%\textit{Press Referee}
+
+%Oxford University Press
+
+%\halfblankline
+
+
+%\textit{Funding Referee}
+
+%European Research Council, National Science Foundation
+
+%\halfblankline
+
+
+%\textit{Journal Referee}
+
+%\textit{American Economic Journal: Applied Economics}, \textit{American Economic Review}, \textit{American Journal of Political Science}, \textit{American Political Science Review}, \textit{Asian Survey}, \textit{British Journal of Political Science}, \textit{Center for Global Development Working Paper Series}, \textit{Comparative Political Studies}, \textit{Comparative Politics}, \textit{Economic Development and Cultural Change}, \textit{The Economic Journal}, \textit{Economics \& Politics}, \textit{International Organization}, \textit{International Studies Quarterly}, \textit{Journal of African Economies}, \textit{Journal of Conflict Resolution}, \textit{Journal of Development Economics}, \textit{Journal of Development Studies}, \textit{Journal of Economic Behavior and Organization}, \textit{Journal of Experimental Political Science}, \textit{Journal of Human Resources}, \textit{Journal of Peace Research}, \textit{Journal of Policy Analysis and Management}, \textit{Journal of Politics}, \textit{Legislative Studies Quarterly}, \textit{Proceedings of the National Academy of Sciences (PNAS)}, \textit{PLoS One}, \textit{Political Behavior}, \textit{Political Research Quarterly}, \textit{Public Opinion Quarterly}, \textit{Review of Economic \& Statistics}, \textit{Studies in Comparative International Development}, \textit{Studies in Indian Politics}, \textit{Social Science Research}, \textit{The Review of International Organizations}, \textit{World Development}, \textit{World Politics}
+
+%\halfblankline
+
+%\textit{Other}
+
+%Expert Member, International Initiative for Impact Evaluation (3ie) \hfill 2012--
+
+
+%\section{Research Awards}
+%APSA Political Economy Section Best Article Award \hfill 2025
+
+\section{Other Training}
+Open Science Grid School (High-Throughput Computing)   \hfill 2024 \\
+Northwestern Advanced Causal Inference Workshop   \hfill 2023
+
+
+\section{Research Grants}
+Ronald Rapoport Summer Research Collaborative Program Award  \hfill 2024
+
+
+\halfblankline
+
+
+
+
+Summer Initiative Research Grant, UW--Madison  \hfill 2024, 2023, 2022, 2021, 2019
+
+\halfblankline
+
+
+
+
+Conference Travel Grant, Elections Research Center, UW--Madison \hfill 2023
+
+
+\halfblankline
+
+Social Science Research Council Mercury Project Award, Co--PI   \hfill 2023
+
+
+
+\halfblankline
+
+
+Graduate Research Travel Grant, UW--Madison   \hfill 2023, 2020, 2019
+
+\halfblankline
+
+Summer Research Scholarship, Department of Political Science, UW--Madison \hfill 2022
+
+
+
+\halfblankline
+
+
+
+
+
+Research Funding Competition, Elections Research Center, UW--Madison \hfill 2021
+
+\halfblankline
+
+
+Graduate School Grant, UW--Madison  \hfill 2018
+
+\halfblankline
+
+Economics Master's Program Research Scholarship, UW--Madison  \hfill 2017
+
+
+
+\section{Awards}
+Faculty-Student Collaborative Summer Research Fellowship,  UW--Madison \hfill 2023, 2022
+
+\halfblankline
+
+University Fellowship, UW--Madison \hfill 2022, 2018--2019
+
+\halfblankline
+
+Research Paper Award (Honorable mention), Economics Dept.,  UW--Madison  \hfill 2018
+
+
+\section{Spoken Languages}
+English, Hindi, Bhojpuri
+
+\section{Programming}
+\textsf{R}, Python, Matlab
+
+\section{Sofware}
+Stata, QGIS, git
+
+
+\section{Affiliations}
+Election Research Center, Graduate Affiliate \hfill 2021--
+
+\halfblankline
+
+Centre for South Asia, Graduate Affiliate \hfill 2018--
+
+\halfblankline
+
+IDFC Institute, Visiting Researcher \hfill 2019
+
+\section{References} 
+\begin{multicols}{2} 
+\noindent \textbf{Rikhil Bhavnani}\\
+    Department of Political Science\\
+    University of Wisconsin-Madison\\
+    North Hall, 1050 Bascom Mall \\
+    Madison, WI 53706\\
+    \href{mailto:bhavnani@wisc.edu}{bhavnani\textrm{@}wisc.edu}
+\columnbreak
+
+   \textbf{Laura Schechter}\\
+Department of Economics  \\
+    University of Wisconsin-Madison\\
+    6462 Social Sciences\\
+    Madison, WI 53706\\
+ \href{mailto:lschechter@wisc.edu}{lschechter\textrm{@}wisc.edu}  
+\end{multicols}
+\begin{multicols}{2}
+     \textbf{Yoshiko M. Herrera}\\
+    Department of Political Science\\
+    University of Wisconsin-Madison\\
+    North Hall, 1050 Bascom Mall \\
+    Madison, WI 53706\\
+ \href{mailto:yherrera@wisc.edu}{yherrera\textrm{@}wisc.edu} 
+ 
+ \vfill\columnbreak
+
+     \textbf{Simon Chauchard}\\
+ Department of Social Sciences \\
+    University Carlos III (Madrid)\\
+    Calle Madrid\\
+    Getafe, Spain \\
+ \href{mailto:simon.chauchard@uc3m.es}{simon.chauchard\textrm{@}uc3m.es}
+ 
+
+
+\end{multicols}
+
+\begin{multicols}{2}
+
+
+
+
+     \textbf{Zhenhuan (Reed) Lei}\\
+    School of International and Public Affairs\\
+    Shanghai Jiao Tong University \\
+    Xin Jian Building 1954. Huashan Rd.  \\
+Shanghai 200030, P.R.China \\
+\href{mailto:zhenhuan.lei@wisc.edu}{reedlei\textrm{@}outlook.com} 
+
+\vfill\columnbreak
+
+
+     \textbf{Priya Mukherjee }\\
+Agricultural and Applied Economics  \\
+    University of Wisconsin-Madison\\
+    Taylor Hall, 427 Lorch Street \\
+    Madison, WI 53706\\
+ \href{mailto:priya.mukherjee@wisc.edu}{priya.mukherjee\textrm{@}wisc.edu}
+    
+
+\end{multicols}
+
+\section{\scriptsize(Updated 5/2025)}
+
+\end{document}
+
