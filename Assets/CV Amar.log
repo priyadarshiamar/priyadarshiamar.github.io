@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.16)  4 AUG 2025 10:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.16)  13 AUG 2025 21:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -429,22 +429,17 @@ Package hyperref Info: Link coloring ON on input line 63.
 \openout3 = `"CV Amar.out"'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--75
-
- []
-
-
-Overfull \hbox (4.34706pt too wide) in paragraph at lines 102--103
+Overfull \hbox (4.34706pt too wide) in paragraph at lines 98--99
 []  \OT1/cmr/m/n/10 Dis-ser-ta-tion:``Political Can-di-dacy and Rep-re-sen-ta-t
 ion in In-dia's Lo-cal Gov-ern-ments" 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 145.
+(Font)              <7> on input line 141.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 145.
+(Font)              <5> on input line 141.
 
-Overfull \hbox (3.25952pt too wide) in paragraph at lines 151--152
+Overfull \hbox (3.25952pt too wide) in paragraph at lines 147--148
 [][][]\OT1/cmr/bx/n/10 ``Do Elec-toral Quo-tas for His-tor-i-cally Marginal-ize
 d Groups Im-prove Women's
  []
@@ -482,7 +477,7 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `"CV Amar".out' has not changed.
-(rerunfilecheck)             Checksum: 51E7D1E9CD118159AC946E3BE1642878;2375.
+(rerunfilecheck)             Checksum: 242712371459B025CCB381426622BA59;2294.
  ) 
 Here is how much of TeX's memory you used:
  9851 strings out of 474116
@@ -491,7 +486,7 @@ Here is how much of TeX's memory you used:
  32081 multiletter control sequences out of 15000+600000
  560235 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,1524b,462s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,1524b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -499,10 +494,10 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
 sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "CV Amar.pdf" (4 pages, 113448 bytes).
+Output written on "CV Amar.pdf" (4 pages, 114014 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 167 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
  26 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
