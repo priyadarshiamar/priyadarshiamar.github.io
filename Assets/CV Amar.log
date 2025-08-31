@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.16)  14 AUG 2025 14:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.16)  30 AUG 2025 21:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -479,7 +479,7 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `"CV Amar".out' has not changed.
-(rerunfilecheck)             Checksum: 242712371459B025CCB381426622BA59;2294.
+(rerunfilecheck)             Checksum: AF8B85B08DE074FC7DB712576A63EA82;2284.
  ) 
 Here is how much of TeX's memory you used:
  9851 strings out of 474116
@@ -488,7 +488,7 @@ Here is how much of TeX's memory you used:
  32081 multiletter control sequences out of 15000+600000
  560235 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,1524b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,1524b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -496,7 +496,7 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
 sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "CV Amar.pdf" (4 pages, 114028 bytes).
+Output written on "CV Amar.pdf" (4 pages, 113704 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  145 compressed objects within 2 object streams
