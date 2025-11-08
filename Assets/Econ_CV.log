@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.16)  17 OCT 2025 09:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.16)  29 OCT 2025 11:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -477,13 +477,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 3.60004pt, for example:
 (fancyhdr)                \setlength{\footskip}{3.60004pt}.
 
-[4]
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 3.60004pt, for example:
-(fancyhdr)                \setlength{\footskip}{3.60004pt}.
-
-[5
+[4
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -492,21 +486,17 @@ enddocument/afterlastpage: lastpage setting LastPage.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Econ_CV.out' has not changed.
 (rerunfilecheck)             Checksum: 1B44D79D42A51E9D078C15F2D910E4F8;2289.
  ) 
 Here is how much of TeX's memory you used:
- 9863 strings out of 474116
- 154888 string characters out of 5743682
+ 9862 strings out of 474116
+ 154882 string characters out of 5743682
  1944187 words of memory out of 5000000
  32085 multiletter control sequences out of 15000+600000
  562366 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,1522b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,1522b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -517,10 +507,10 @@ sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
 ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loca
 l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/
 texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Econ_CV.pdf (5 pages, 158099 bytes).
+Output written on Econ_CV.pdf (4 pages, 158490 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
