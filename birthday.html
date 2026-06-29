@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>🎂 Happy Birthday! 🎉</title>
+<style>
+  :root {
+    --bg1: #1a0b2e;
+    --bg2: #2c1250;
+    --bg3: #43156b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+    color: #fff;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
+    background-size: 400% 400%;
+    animation: bgShift 18s ease infinite;
+    position: relative;
+  }
+
+  @keyframes bgShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* ---------- String of party lights along the top ---------- */
+  .lights {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 4px 0;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .lights span {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #fff;
+    box-shadow: 0 0 10px 3px currentColor;
+    animation: blink 1.4s infinite ease-in-out;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1;   transform: scale(1.15); }
+    50%      { opacity: 0.25; transform: scale(0.8); }
+  }
+
+  /* ---------- Main content ---------- */
+  .stage {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+  }
+
+  h1.title {
+    font-size: clamp(2rem, 7vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #ffd86b, #ff7eb3, #7afcff, #ffd86b);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 6s linear infinite;
+    filter: drop-shadow(0 2px 14px rgba(255,150,200,0.4));
+  }
+  @keyframes shimmer { to { background-position: 300% 0; } }
+
+  .greeting {
+    font-size: clamp(1.3rem, 4.5vw, 2.6rem);
+    min-height: 1.4em;
+    font-weight: bold;
+    margin: 6px 0 4px;
+    transition: opacity .4s ease, transform .4s ease;
+  }
+  .lang-name {
+    font-size: clamp(.8rem, 2.5vw, 1.1rem);
+    opacity: .75;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
+
+  .cake {
+    font-size: clamp(4rem, 16vw, 9rem);
+    line-height: 1;
+    cursor: pointer;
+    transition: transform .25s ease;
+    user-select: none;
+    filter: drop-shadow(0 8px 18px rgba(0,0,0,.4));
+  }
+  .cake:hover { transform: scale(1.08) rotate(-3deg); }
+  .cake.pop { animation: pop .5s ease; }
+  @keyframes pop {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.3) rotate(6deg); }
+    100% { transform: scale(1); }
+  }
+
+  .controls {
+    margin-top: 30px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  button.btn {
+    font-family: inherit;
+    font-size: clamp(.95rem, 2.6vw, 1.15rem);
+    font-weight: bold;
+    color: #2c1250;
+    background: linear-gradient(135deg, #ffd86b, #ff9a9e);
+    border: none;
+    padding: 14px 26px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,.35);
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+  }
+  button.btn:hover { transform: translateY(-3px); filter: brightness(1.08); }
+  button.btn:active { transform: translateY(0); }
+  button.btn.secondary {
+    background: rgba(255,255,255,.12);
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,.4);
+    backdrop-filter: blur(4px);
+  }
+
+  .hint {
+    position: fixed;
+    bottom: 14px; left: 0; right: 0;
+    text-align: center;
+    font-size: .85rem;
+    opacity: .6;
+    z-index: 10;
+  }
+
+  /* ---------- Balloons ---------- */
+  .balloon {
+    position: fixed;
+    bottom: -160px;
+    width: 52px; height: 66px;
+    border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%;
+    z-index: 4;
+    opacity: .9;
+    animation: floatUp linear forwards;
+  }
+  .balloon::after {
+    content: "";
+    position: absolute;
+    bottom: -34px; left: 50%;
+    width: 1px; height: 34px;
+    background: rgba(255,255,255,.5);
+    transform: translateX(-50%);
+  }
+  @keyframes floatUp {
+    to { transform: translateY(-120vh) translateX(var(--drift, 0)); opacity: 0; }
+  }
+
+  /* ---------- Confetti ---------- */
+  .confetti {
+    position: fixed;
+    top: -20px;
+    width: 10px; height: 16px;
+    z-index: 8;
+    will-change: transform;
+    animation: fall linear forwards;
+  }
+  @keyframes fall {
+    to { transform: translateY(110vh) rotateZ(720deg); }
+  }
+
+  .muted-note { font-size:.8rem; opacity:.7; margin-top:8px; }
+</style>
+</head>
+<body>
+  <div class="lights" id="lights"></div>
+
+  <div class="stage">
+    <h1 class="title">Happy&nbsp;Birthday!&nbsp;🎂</h1>
+    <div class="greeting" id="greeting">Happy Birthday!</div>
+    <div class="lang-name" id="langName">English</div>
+
+    <div class="cake" id="cake" title="Tap the cake!">🎂</div>
+
+    <div class="controls">
+      <button class="btn" id="playBtn">🎵 Play Music &amp; Lights</button>
+      <button class="btn secondary" id="confettiBtn">🎉 Confetti</button>
+      <button class="btn secondary" id="langBtn">🌍 Next Language</button>
+    </div>
+    <div class="muted-note" id="status">Tap “Play” to start the song 🎶 (and tap the cake to blow out the candles!)</div>
+  </div>
+
+  <div class="hint">Made with ❤️ • Tap the cake • Switch languages • Turn your sound on 🔊</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ============================================================
+     Multi-language birthday greetings
+     ============================================================ */
+  const GREETINGS = [
+    { lang: "English",    text: "Happy Birthday!" },
+    { lang: "Hindi",      text: "जन्मदिन मुबारक हो!" },
+    { lang: "Spanish",    text: "¡Feliz Cumpleaños!" },
+    { lang: "French",     text: "Joyeux Anniversaire !" },
+    { lang: "German",     text: "Alles Gute zum Geburtstag!" },
+    { lang: "Italian",    text: "Buon Compleanno!" },
+    { lang: "Portuguese", text: "Feliz Aniversário!" },
+    { lang: "Japanese",   text: "お誕生日おめでとう！" },
+    { lang: "Chinese",    text: "生日快乐！" },
+    { lang: "Korean",     text: "생일 축하해요!" },
+    { lang: "Arabic",     text: "عيد ميلاد سعيد!" },
+    { lang: "Russian",    text: "С Днём Рождения!" },
+    { lang: "Bengali",    text: "শুভ জন্মদিন!" },
+    { lang: "Tamil",      text: "பிறந்தநாள் வாழ்த்துக்கள்!" },
+    { lang: "Telugu",     text: "పుట్టినరోజు శుభాకాంక్షలు!" },
+    { lang: "Greek",      text: "Χρόνια Πολλά!" },
+    { lang: "Dutch",      text: "Gelukkige Verjaardag!" },
+    { lang: "Turkish",    text: "Doğum Günün Kutlu Olsun!" },
+    { lang: "Thai",       text: "สุขสันต์วันเกิด!" },
+    { lang: "Hebrew",     text: "יום הולדת שמח!" },
+  ];
+
+  const greetingEl = document.getElementById("greeting");
+  const langNameEl  = document.getElementById("langName");
+  const statusEl    = document.getElementById("status");
+  let langIndex = 0;
+
+  function showLang(i) {
+    const g = GREETINGS[i];
+    greetingEl.style.opacity = 0;
+    greetingEl.style.transform = "translateY(8px)";
+    setTimeout(() => {
+      greetingEl.textContent = g.text;
+      langNameEl.textContent = g.lang;
+      greetingEl.style.opacity = 1;
+      greetingEl.style.transform = "translateY(0)";
+    }, 220);
+  }
+
+  document.getElementById("langBtn").addEventListener("click", () => {
+    langIndex = (langIndex + 1) % GREETINGS.length;
+    showLang(langIndex);
+  });
+
+  /* Auto-cycle languages */
+  setInterval(() => {
+    langIndex = (langIndex + 1) % GREETINGS.length;
+    showLang(langIndex);
+  }, 3000);
+
+  /* ============================================================
+     Party lights (top string)
+     ============================================================ */
+  const lightColors = ["#ff5d8f", "#ffd86b", "#7afcff", "#9bff7a", "#c08bff", "#ffae5d"];
+  const lightsEl = document.getElementById("lights");
+  const NUM_LIGHTS = 28;
+  for (let i = 0; i < NUM_LIGHTS; i++) {
+    const s = document.createElement("span");
+    const c = lightColors[i % lightColors.length];
+    s.style.color = c;
+    s.style.background = c;
+    s.style.animationDelay = (i * 0.12) + "s";
+    lightsEl.appendChild(s);
+  }
+
+  /* ============================================================
+     Confetti
+     ============================================================ */
+  const confettiColors = ["#ff5d8f", "#ffd86b", "#7afcff", "#9bff7a", "#c08bff", "#ffae5d", "#ffffff"];
+  function burstConfetti(count) {
+    count = count || 80;
+    for (let i = 0; i < count; i++) {
+      const c = document.createElement("div");
+      c.className = "confetti";
+      c.style.left = Math.random() * 100 + "vw";
+      c.style.background = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+      c.style.animationDuration = (2 + Math.random() * 2.5) + "s";
+      c.style.animationDelay = (Math.random() * 0.6) + "s";
+      c.style.transform = "rotate(" + (Math.random() * 360) + "deg)";
+      if (Math.random() > 0.5) c.style.borderRadius = "50%";
+      document.body.appendChild(c);
+      setTimeout(() => c.remove(), 5200);
+    }
+  }
+  document.getElementById("confettiBtn").addEventListener("click", () => burstConfetti(90));
+
+  /* ============================================================
+     Balloons
+     ============================================================ */
+  const balloonColors = ["#ff5d8f", "#ffd86b", "#7afcff", "#9bff7a", "#c08bff", "#ff8a8a"];
+  function launchBalloon() {
+    const b = document.createElement("div");
+    b.className = "balloon";
+    b.style.left = Math.random() * 100 + "vw";
+    b.style.background = balloonColors[Math.floor(Math.random() * balloonColors.length)];
+    b.style.setProperty("--drift", (Math.random() * 120 - 60) + "px");
+    b.style.animationDuration = (7 + Math.random() * 6) + "s";
+    document.body.appendChild(b);
+    setTimeout(() => b.remove(), 14000);
+  }
+  let balloonTimer = null;
+  function startBalloons() {
+    if (balloonTimer) return;
+    balloonTimer = setInterval(launchBalloon, 900);
+    for (let i = 0; i < 4; i++) setTimeout(launchBalloon, i * 250);
+  }
+  function stopBalloons() {
+    clearInterval(balloonTimer);
+    balloonTimer = null;
+  }
+
+  /* ============================================================
+     Music — "Happy Birthday" via Web Audio API
+     (no external files, works anywhere)
+     ============================================================ */
+  let audioCtx = null;
+  let isPlaying = false;
+  let scheduledTimers = [];
+
+  // Note frequencies
+  const NOTE = {
+    C4: 261.63, D4: 293.66, E4: 329.63, F4: 349.23, G4: 392.00,
+    A4: 440.00, Bb4: 466.16, B4: 493.88, C5: 523.25, D5: 587.33,
+    E5: 659.25, F5: 698.46, G5: 783.99
+  };
+
+  // Happy Birthday melody: [note, beats]
+  const MELODY = [
+    ["G4",.5],["G4",.5],["A4",1],["G4",1],["C5",1],["B4",2],
+    ["G4",.5],["G4",.5],["A4",1],["G4",1],["D5",1],["C5",2],
+    ["G4",.5],["G4",.5],["G5",1],["E5",1],["C5",1],["B4",1],["A4",2],
+    ["F5",.5],["F5",.5],["E5",1],["C5",1],["D5",1],["C5",2]
+  ];
+
+  const TEMPO = 0.42; // seconds per beat
+
+  function playNote(freq, startTime, duration) {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = "triangle";
+    osc.frequency.value = freq;
+
+    // soft attack/release envelope
+    const peak = 0.22;
+    gain.gain.setValueAtTime(0.0001, startTime);
+    gain.gain.exponentialRampToValueAtTime(peak, startTime + 0.03);
+    gain.gain.setValueAtTime(peak, startTime + duration * 0.6);
+    gain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
+
+    // a gentle sparkle harmonic
+    const osc2 = audioCtx.createOscillator();
+    osc2.type = "sine";
+    osc2.frequency.value = freq * 2;
+    const gain2 = audioCtx.createGain();
+    gain2.gain.setValueAtTime(0.0001, startTime);
+    gain2.gain.exponentialRampToValueAtTime(peak * 0.18, startTime + 0.03);
+    gain2.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
+
+    osc.connect(gain).connect(audioCtx.destination);
+    osc2.connect(gain2).connect(audioCtx.destination);
+    osc.start(startTime); osc.stop(startTime + duration + 0.05);
+    osc2.start(startTime); osc2.stop(startTime + duration + 0.05);
+  }
+
+  function scheduleSong() {
+    let t = audioCtx.currentTime + 0.15;
+    const totalBeats = [];
+    MELODY.forEach(([n, beats]) => {
+      const dur = beats * TEMPO;
+      playNote(NOTE[n], t, dur * 0.92);
+      // beat-synced visual flourish
+      const visTime = (t - audioCtx.currentTime) * 1000;
+      const id = setTimeout(() => beatFlash(), visTime);
+      scheduledTimers.push(id);
+      t += dur;
+    });
+    const songMs = (t - audioCtx.currentTime) * 1000;
+    // loop the song while playing
+    const loopId = setTimeout(() => { if (isPlaying) scheduleSong(); }, songMs + 600);
+    scheduledTimers.push(loopId);
+  }
+
+  function beatFlash() {
+    // pulse the lights a touch on each note
+    lightsEl.style.filter = "brightness(1.6)";
+    setTimeout(() => { lightsEl.style.filter = "brightness(1)"; }, 120);
+    // occasional confetti puff with the music
+    if (Math.random() > 0.7) burstConfetti(14);
+  }
+
+  function clearTimers() {
+    scheduledTimers.forEach(clearTimeout);
+    scheduledTimers = [];
+  }
+
+  const playBtn = document.getElementById("playBtn");
+
+  function startParty() {
+    if (!audioCtx) {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      audioCtx = new AC();
+    }
+    if (audioCtx.state === "suspended") audioCtx.resume();
+    isPlaying = true;
+    playBtn.textContent = "⏸ Pause Music";
+    statusEl.textContent = "🎶 Playing… let the candles glow! Tap the cake to make a wish.";
+    scheduleSong();
+    startBalloons();
+    burstConfetti(120);
+  }
+
+  function stopParty() {
+    isPlaying = false;
+    clearTimers();
+    if (audioCtx) audioCtx.suspend();
+    stopBalloons();
+    playBtn.textContent = "🎵 Play Music & Lights";
+    statusEl.textContent = "Paused. Tap “Play” to celebrate again! 🎉";
+  }
+
+  playBtn.addEventListener("click", () => {
+    if (isPlaying) stopParty(); else startParty();
+  });
+
+  /* ============================================================
+     Cake interaction — blow out candles
+     ============================================================ */
+  const cake = document.getElementById("cake");
+  let candlesOut = false;
+  cake.addEventListener("click", () => {
+    cake.classList.remove("pop");
+    void cake.offsetWidth; // restart animation
+    cake.classList.add("pop");
+    burstConfetti(60);
+    if (!candlesOut) {
+      cake.textContent = "🎂✨";
+      statusEl.textContent = "🌟 Make a wish! Wishing you the happiest birthday ever! 🥳";
+      candlesOut = true;
+      setTimeout(() => { cake.textContent = "🎂"; candlesOut = false; }, 2500);
+    }
+  });
+
+  /* gentle initial confetti on load */
+  window.addEventListener("load", () => burstConfetti(40));
+})();
+</script>
+</body>
+</html>
